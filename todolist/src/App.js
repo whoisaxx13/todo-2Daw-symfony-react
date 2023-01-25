@@ -1,10 +1,17 @@
 import './App.css';
 import FormLogin from './components/FormLogin';
 import FormRegister from './components/FormRegister';
+import CardShow from './components/CardShow';
+import FormularioTarea from './components/FormularioTarea';
 
 function App() {
   return (
-    <FormRegister/>
+    <div>
+      <FormRegister/>
+      <FormLogin/>
+      <FormularioTarea/>
+      <CardShow/>
+    </div>
   );
 }
 

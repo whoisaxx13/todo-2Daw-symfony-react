@@ -1,0 +1,19 @@
+{
+    "tareas": [
+      {
+        "tarea": "Hola amigos",
+        "importancia": "2",
+        "id": 1
+      },
+      {
+        "id": 2,
+        "tarea": "Segunda tarea",
+        "importancia": 3
+      },
+      {
+        "tarea": "Terminar proyecto de React",
+        "importancia": "2",
+        "id": 3
+      }
+    ]
+  }

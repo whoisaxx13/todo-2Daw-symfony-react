@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 const FormLogin = () => {
   const [entradas, setEntradas] = useState([]);
 
-  const { register, handleSubmit } = useForm();
+  const {register,handleSubmit,formState:{ errors } } = useForm();
   // register pasa todos los nombres del formulario y las restricciones.
 
   const onSubmit = (data, e) => {
@@ -32,6 +32,10 @@ const FormLogin = () => {
             })
           }
         />
+        <span className="text-danger text-small d-bloc mb-2">
+            {errors?.username?.message}
+            {/* Hay errores? es del campo username? muestralo */}
+        </span>
         <input
           type="password"
           placeholder="Ingrese contraseña..."
@@ -45,7 +49,11 @@ const FormLogin = () => {
             })
           }
         />
-        <button type="submit" className="form-group text-center">
+        <span className="text-danger text-small d-bloc mb-2">
+            {errors?.username?.message}
+            {/* Hay errores? es del campo username? muestralo */}
+        </span>
+        <button type="submit" className="btn btn-primary mt-4">
           Enviar
         </button>
       </form>
